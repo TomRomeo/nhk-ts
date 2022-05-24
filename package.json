@@ -1,0 +1,36 @@
+{
+  "name": "nhk-ts",
+  "version": "1.0.0",
+  "description": "A npm package for nhk news",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "github:TomRomeo/nhk-ts"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nhk",
+    "news",
+    "japanese"
+  ],
+  "author": "TomRomeo",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.4",
+    "reflect-metadata": "^0.1.13",
+    "typescript-json-serializer": "^4.2.0"
+  }
+}
