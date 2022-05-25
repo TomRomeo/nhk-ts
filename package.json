@@ -1,6 +1,6 @@
 {
   "name": "nhk-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A npm package for nhk news",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,5 +32,12 @@
     "node-fetch": "^3.2.4",
     "reflect-metadata": "^0.1.13",
     "typescript-json-serializer": "^4.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/TomRomeo/nhk-ts/issues"
+  },
+  "homepage": "https://github.com/TomRomeo/nhk-ts#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
