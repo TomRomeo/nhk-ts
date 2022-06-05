@@ -6,7 +6,6 @@ import {
 } from 'typescript-json-serializer';
 
 import 'reflect-metadata';
-import fetch from 'node-fetch';
 
 @JsonObject()
 export class News {
@@ -187,7 +186,11 @@ export class Nhk {
 		if (!res.ok) {
 			throw new Error('Could not fetch news:' + res.body);
 		}
-		const json = await res.json();
+		// remove weird zero width characters at the start and end of the file
+        let text = await res.text();
+        text = text.trim();
+        const json = JSON.parse(text);
+
 		if (!Array.isArray(json) || json === null) {
 			return news;
 		}
